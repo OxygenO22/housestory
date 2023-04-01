@@ -3,6 +3,6 @@ import './Content.scss';
 
 export const Content = () => {
   return (
-    <div>Content</div>
+    <div className='content__wrapper'>Content</div>
   )
 }
