@@ -1,0 +1,17 @@
+.footer__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 300px;
+  border: 1px solid #000;
+}
+
+.footer__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 100%;
+  border: 1px solid #000;
+}

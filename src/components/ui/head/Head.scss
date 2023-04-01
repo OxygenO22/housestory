@@ -1,0 +1,45 @@
+.head__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 740px;
+  border: 1px solid #000;
+  margin-bottom: 60px;
+}
+
+.head__picture-house {
+  position: absolute;
+  top: -190px;
+  right: -135px;
+  z-index: -4;
+}
+
+.head__picture-tree {
+  position: absolute;
+  top: 260px;
+  left: -135px;
+  z-index: -2;
+}
+
+.head__picture-cloud1 {
+  position: absolute;
+  top: 380px;
+  left: -100px;
+  z-index: -3;
+}
+
+.head__picture-cloud2 {
+  position: absolute;
+  top: 457px;
+  right: -134px;
+  z-index: -3;
+}
+
+.head__picture-cloud4 {
+  position: absolute;
+  top: -182px;
+  right: -134px;
+  z-index: -3;
+}

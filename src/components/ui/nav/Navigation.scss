@@ -1,0 +1,18 @@
+.navigation__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 64px;
+  border: 1px solid #000;
+  padding: 22px 100px;
+}
+
+.navigation__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  border: 1px solid #000;
+}
