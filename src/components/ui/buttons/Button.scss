@@ -1,0 +1,24 @@
+@import '../../../constants.scss';
+
+.button__header, .button__footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  border: none;
+  color: #fff;
+  font-family: $font;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.button__footer {
+  padding: 22px 56px;
+  border: 2px solid #fff;
+  background: transparent;
+  &:hover {
+    background: rgba(0, 0, 0, .8);
+  }
+}

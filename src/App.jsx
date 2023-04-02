@@ -1,3 +1,4 @@
+import React from "react";
 import { Router } from "./components/route/Router";
 import "./App.scss";
 

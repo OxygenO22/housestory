@@ -5,6 +5,7 @@
   width: 100%;
   min-height: 300px;
   border: 1px solid #000;
+  background: rgba(0, 0, 0, .7);
 }
 
 .footer__item {
@@ -15,3 +16,34 @@
   height: 100%;
   border: 1px solid #000;
 }
+
+.footer__item-innerlogo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.footer__logo2 {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px;
+}
+
+.footer__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer__inner-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 0px 10px;
+}
+
