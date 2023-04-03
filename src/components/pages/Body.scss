@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
+  font-size: 16px;
 }
 
 .body__main {
@@ -24,116 +25,4 @@
   width: 100%;
   max-width: 1580px;
   height: 100%;
-}
-
-.body__picture-house {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -4;
-}
-
-.body__picture-tree {
-  position: absolute;
-  top: 445px;
-  left: 0;
-  z-index: -2;
-}
-
-.body__picture-cloud1 {
-  position: absolute;
-  top: 574px;
-  left: 32px;
-  z-index: -3;
-}
-
-.body__picture-cloud2 {
-  position: absolute;
-  top: 640px;
-  right: 0;
-  z-index: -3;
-}
-
-.body__picture-cloud4 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -3;
-}
-
-.body__picture-sawdust1 {
-  position: absolute;
-  top: 876px;
-  right: 0;
-  z-index: -3;
-}
-
-.body__picture-leaf {
-  position: absolute;
-  top: 1254px;
-  left: 0;
-  z-index: -3;
-  &::before {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    //background: rgb(255 255 255 / 10%);
-    background: linear-gradient(to right, transparent 10%, rgba(255, 255, 255, 0.4) 80%);
-    z-index: 1;
-    backdrop-filter: blur(1px);
-  }
-  /* &::after {
-    content: "";
-    position: absolute;
-    right: 12px;
-    top: 67px;
-    width: 50%;
-    height: 50%;
-    background: rgb(255 255 255 / 10%);
-    z-index: 1;
-    backdrop-filter: blur(4px);
-    border-radius: 50%;
-  } */
-}
-
-.body__picture-house2 {
-  position: absolute;
-  bottom: 297px;
-  left: 0;
-  z-index: -3;
-}
-
-.body__picture-cloud3 {
-  position: absolute;
-  bottom: 874px;
-  left: 0;
-  z-index: -3;
-}
-
-.body__picture-sawdust2 {
-  position: absolute;
-  bottom: 743px;
-  left: 860px;
-  z-index: -3;
-}
-
-.body__picture-tree2 {
-  position: absolute;
-  bottom: 300px;
-  right: 0;
-  z-index: -3;
-  &::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, .1);
-    z-index: 1;
-    backdrop-filter: blur(2px);
-  }
 }

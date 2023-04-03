@@ -4,18 +4,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 2px;
+  border-radius: 5px;
   border: none;
   color: #fff;
   font-family: $font;
   font-size: 16px;
+  padding: 22px 56px;
   text-decoration: none;
   cursor: pointer;
   transition: .2s;
 }
 
+.button__header {
+  position: relative;
+  z-index: 5;
+  background: rgb(49, 159, 28);
+  &:hover {
+    box-shadow: 5px 5px 10px rgba(49, 159, 28, .8);
+  }
+}
+
 .button__footer {
-  padding: 22px 56px;
   border: 2px solid #fff;
   background: transparent;
   &:hover {

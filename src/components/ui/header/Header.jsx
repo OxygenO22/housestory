@@ -3,6 +3,8 @@ import './Header.scss';
 import { Link } from 'react-router-dom';
 import logo1 from '../../../icons/logo1.svg';
 import box from '../../../icons/box.svg';
+import { Button } from '../buttons/Button';
+import { ButtonsSocial } from '../buttons/ButtonsSocial';
 
 export const Header = () => {
 
@@ -11,7 +13,7 @@ export const Header = () => {
 
   return (
     <div className='header__wrapper'>
-      <div className="header__item">
+      <div className="header__item header__item-logo">
         <Link to='/'>
           <div className="header__logo">
             <img className='header__img' src={logo1} alt="logo 1"></img>
@@ -40,9 +42,12 @@ export const Header = () => {
       </div>
       <div className="header__item">
         Header item
+        <div className='header__social'>
+          <ButtonsSocial place={'header'}/>
+        </div>
       </div>
-      <div className="header__item">
-        Header item
+      <div className="header__item header__item-button">
+        <Button classname={"button__header"} name={"Заказать звонок"}/>
       </div>
       
     </div>
