@@ -7,6 +7,7 @@ import { Content } from '../ui/content/Content';
 import { SubFooter } from '../ui/subfooter/SubFooter';
 import { Footer } from '../ui/footer/Footer';
 import { BodyPictures } from './BodyPictures';
+import { ButtonsTool } from '../ui/buttons/ButtonsTool';
 
 
 export const Body = () => {
@@ -20,6 +21,7 @@ export const Body = () => {
         <Content />
         <SubFooter />
       </div>
+        <ButtonsTool/>
         <Footer />
     </div>
   )
