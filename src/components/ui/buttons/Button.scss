@@ -9,6 +9,9 @@
   color: #fff;
   font-family: $font;
   font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding: 22px 56px;
   text-decoration: none;
   cursor: pointer;
@@ -19,6 +22,7 @@
   position: relative;
   z-index: 5;
   background: rgb(49, 159, 28);
+  box-shadow: 2px 2px 5px rgba(49, 159, 28, .8);
   &:hover {
     box-shadow: 5px 5px 10px rgba(49, 159, 28, .8);
   }

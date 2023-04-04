@@ -1,0 +1,38 @@
+.navigation__submenu {
+  position: absolute;
+  left: 50%;
+  top: 40px;
+  display: none;
+  width: 348px;
+  padding: 25px 35px;
+  transform: translateX(-50%);
+  background: #595959;
+}
+
+.navigation__submenu-item-text {
+  padding: 10px 0;
+  border-bottom: 1px solid #fff;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.navigation__submenu-link {
+  text-decoration: none;
+}
+
+.active {
+  display: block;
+}
+
+.navigation__submenu-text {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 19px;
+  color: #fff;
+  margin-bottom: 10px;
+  cursor: pointer;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

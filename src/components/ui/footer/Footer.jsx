@@ -5,7 +5,7 @@ import logo2 from '../../../icons/logo2.svg';
 import logo3 from '../../../icons/logo3.svg';
 import { Button } from '../buttons/Button';
 import { FooterLinks } from './FooterLinks';
-import {footerLinks1, footerLinks2} from './FooterData';
+import {footerLinks1, footerLinks2, extraInfo} from './FooterData';
 import { ButtonsSocial } from '../buttons/ButtonsSocial';
 
 export const Footer = () => {
@@ -39,18 +39,22 @@ export const Footer = () => {
         </div>
       </div>
       <div className="footer__item">
-        <div className="footer__inner-logo3">
-          <p className="footer__logo3-text1">Делимся крутыми проектами в соц.сетях. Подписывайтесь!</p>
-          <div className='footer__social'>
-            <ButtonsSocial place={'footer'}/>
-          </div>
-          <p className="footer__logo3-text2">Разработка и продвижение сайта:</p>
-          <Link  to='/'>
-            <div className="footer__logo3">
-              <img className='footer__img' src={logo3} alt="logo3"></img>
+        {
+          extraInfo.map(data => 
+            <div className="footer__inner-logo3">
+              <p className="footer__logo3-text1">{data.social}</p>
+              <div className='footer__social'>
+                <ButtonsSocial place={'footer'}/>
+              </div>
+              <p className="footer__logo3-text2">{data.ourWebsite}</p>
+              <Link  to='/'>
+                <div className="footer__logo3">
+                  <img className='footer__img' src={logo3} alt="logo3"></img>
+                </div>
+              </Link>
             </div>
-          </Link>
-        </div>
+          )
+        }
       </div>
       
     </div>

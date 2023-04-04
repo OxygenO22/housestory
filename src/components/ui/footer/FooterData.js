@@ -12,6 +12,13 @@
     {id: 3, name: 'О нас', path: '*'},
     {id: 4, name: 'Блог', path: '*'},
     {id: 5, name: 'Контакты', path: '*'}
-  ]
+  ];
 
-  export {footerLinks1, footerLinks2}
+  const extraInfo = [
+    {
+      social: 'Делимся крутыми проектами в соц.сетях. Подписывайтесь!',
+      ourWebsite: 'Разработка и продвижение сайта:'
+    }
+  ];
+
+  export {footerLinks1, footerLinks2, extraInfo}
