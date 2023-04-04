@@ -1,0 +1,157 @@
+.formconsult__wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 775px; 
+}
+
+.formconsult__text {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.formconsult__text-title {
+  width: 100%;
+  font-size: 2.2em;
+  line-height: 42px;
+  font-weight: 900;
+  color: #363130;
+  margin-bottom: 20px;
+}
+
+.formconsult__text-description {
+  width: 100%;
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 26px;
+  font-weight: 400;
+  color: #000;
+}
+
+.formconsult__form-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.formconsult__form-text {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.formconsult__form-text-title {
+  width: 100%;
+  font-size: 1.6em;
+  line-height: 30px;
+  font-weight: 900;
+  color: #319F1C;
+  margin-bottom: 20px;
+}
+
+.formconsult__form-text-description {
+  width: 100%;
+  text-align: left;
+  font-size: 1em;
+  line-height: 19px;
+  font-weight: 600;
+  color: #000;
+}
+
+.formconsult__form-inner {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.formconsult__form-inner-item {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.formconsult__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.formconsult__input-error-wrapper {
+  width: 100%;
+  height: 18px;
+}
+
+.formconsult__input {
+  border: 1px solid #319F1C;
+  border-radius: 4px;
+  padding: 10px 30px;
+  outline: none;
+  font-size: 1em;
+  color: #000;
+  &:hover {
+    border: 1px solid #63d141;
+  }
+  &:focus {
+    border: 1px solid #63d141;
+  }
+}
+
+.formconsult__input-error {
+  font-size: .75em;
+  line-height: 19px;
+  font-weight: 400;
+  color: #f00;
+}
+
+.formconsult__button {
+  border-radius: 4px;
+  padding: 10px 30px;
+  background: #319F1C;
+  border: 1px solid #319F1C;
+  font-size: 1em;
+  color: #fff;
+  &:hover {
+    border: 1px solid #63d141;
+    background: #63d141;
+  }
+}
+
+.formconsult__exinfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.formconsult__exinfo-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.formconsult__exinfo-text {
+  font-size: .75em;
+  line-height: 14px;
+  font-weight: 400;
+  color: #000;
+}
+
+.formconsult__present1 {
+  position: absolute;
+  top: -220px;
+  right: -125px;
+}
+
+.formconsult__present2 {
+  position: absolute;
+  top: 110px;
+  left: 36px;
+}

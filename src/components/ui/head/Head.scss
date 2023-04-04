@@ -1,9 +1,9 @@
 .head__wrapper {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 100%;
-  min-height: 740px;
+  min-height: 660px;
   border: 1px solid #000;
   margin-bottom: 60px;
 }

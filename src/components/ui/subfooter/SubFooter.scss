@@ -1,8 +1,8 @@
 .subfooter__wrapper {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
   width: 100%;
-  min-height: 600px;
+  min-height: 550px;
   border: 1px solid #000;
 }

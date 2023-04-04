@@ -3,9 +3,7 @@ import './Button.scss';
 
 export const Button = ({classname, name}) => {
   return (
-    <button
-      className={classname}
-    >
+    <button className={classname}>
       {name}
     </button>
   )
