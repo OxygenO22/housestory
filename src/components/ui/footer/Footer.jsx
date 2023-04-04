@@ -22,30 +22,30 @@ export const Footer = () => {
         <Button classname={"button__footer"} name={"Заказать звонок"}/>
         </div>
       </div>
-      <div className="footer__item">
-        <div className="footer__inner-links">
-          {footerLinks1.map(data => 
-              <FooterLinks key={data.id} name={data.name} path={data.path} />
-            )
-          }
+      <div className="footer__item footer__item-links">
+        <div className='footer__wrapper-links'>
+          <div className='footer__inner-links'>
+            {footerLinks1.map(data => 
+                <FooterLinks key={data.id} name={data.name} path={data.path} />
+              )
+            }
+          </div>
+          <div className='footer__inner-links'>
+            {footerLinks2.map(data => 
+                <FooterLinks key={data.id} name={data.name} path={data.path} />
+              )
+            }
+          </div>
         </div>
       </div>
       <div className="footer__item">
-        <div className="footer__inner-links">
-          {footerLinks2.map(data => 
-              <FooterLinks key={data.id} name={data.name} path={data.path} />
-            )
-          }
-        </div>
-      </div>
-      <div className="footer__item">
-        <div className="footer__item-innerlogo">
-          <p>Делимся крутыми проектами в соц.сетях. Подписывайтесь!</p>
+        <div className="footer__inner-logo3">
+          <p className="footer__logo3-text1">Делимся крутыми проектами в соц.сетях. Подписывайтесь!</p>
           <div className='footer__social'>
             <ButtonsSocial place={'footer'}/>
           </div>
-          <p>Разработка и продвижение сайта:</p>
-          <Link to='/'>
+          <p className="footer__logo3-text2">Разработка и продвижение сайта:</p>
+          <Link  to='/'>
             <div className="footer__logo3">
               <img className='footer__img' src={logo3} alt="logo3"></img>
             </div>

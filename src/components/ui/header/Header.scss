@@ -3,7 +3,6 @@
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  border: 1px solid #000;
   padding: 30px 0px;
 }
 
@@ -13,7 +12,6 @@
   align-items: center;
   width: 20%;
   height: 100%;
-  border: 1px solid #000;
 }
 
 .header__item-logo {
@@ -41,8 +39,16 @@
   align-items: center;
   justify-content: center;
   & p {
-    font-size: 16px;
+    width: 100%;
+    font-size: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
+}
+
+.header__box-link {
+  text-decoration: none;
 }
 
 .header__item-inner-layout {
@@ -51,7 +57,10 @@
   align-items: center;
 }
 
-.header__box {
+.header__box-icon  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -59,10 +68,36 @@
   margin-right: 8px;
 }
 
+.header__social-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: #dbd6d6;
+  margin-right: 8px;
+}
+
 .header__box-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.header__social-img-phone {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 4;
+}
+
+.header__social-img-ellipse2 {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  z-index: 3;
 }
 
 .header__box-text-wrapper {
@@ -74,10 +109,32 @@
   width: 100%;
   font-size: 18px;
   color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .header__social {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header__social-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__social-phonenumber {
+  width: 100%;
+  font-size: 1.3em;
+  line-height: 27px;
+  font-weight: 800;
+  color: #363130;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

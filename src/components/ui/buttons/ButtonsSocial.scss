@@ -1,8 +1,14 @@
+.social__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header__social-item, .footer__social-item {
   position: relative;
   width: 35px;
   height: 35px;
-  margin-right: 20px;
+  margin-right: 10px;
   &:last-child {
     margin-right: 0;
   }

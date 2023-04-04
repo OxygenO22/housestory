@@ -4,10 +4,9 @@
   align-items: center;
   width: 100%;
   min-height: 64px;
-  border: 1px solid #000;
   padding: 22px 268px;
   margin-bottom: 60px;
-  background: linear-gradient(90deg, #F6F6F6 0%, #A3D29B 10%, #319F1C 30%, #309E1B 50%, #319F1C 70%, #93CA89 90%, #F6F6F6 100%);
+  background: linear-gradient(90deg, #fff 0%, #F6F6F6 5%, #A3D29B 10%, #319F1C 30%, #309E1B 50%, #319F1C 70%, #93CA89 90%, #F6F6F6 100%);
 }
 
 .navigation__item {
@@ -23,9 +22,14 @@
   line-height: 19px;
   font-weight: 500;
   color: #fff;
-  transition: .2s;
-  &:hover {
-    cursor: pointer;
-    font-size: 1.1em;
-  }
+  cursor: pointer;
+}
+
+.navigation__item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16px;
+  margin-left: 10px;
+  cursor: pointer;
 }

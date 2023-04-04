@@ -28,7 +28,7 @@
 
 .body__picture-cloud4 {
   position: absolute;
-  top: 0;
+  top: 23px;
   right: 0;
   z-index: 2;
 }
@@ -53,29 +53,15 @@
     top: 0;
     width: 100%;
     height: 100%;
-    //background: rgb(255 255 255 / 10%);
     background: linear-gradient(to right, transparent 10%, rgba(255, 255, 255, 0.4) 80%);
     z-index: 1;
     backdrop-filter: blur(1px);
   }
-
-  /* &::after {
-    content: "";
-    position: absolute;
-    right: 12px;
-    top: 67px;
-    width: 50%;
-    height: 50%;
-    background: rgb(255 255 255 / 10%);
-    z-index: 1;
-    backdrop-filter: blur(4px);
-    border-radius: 50%;
-  } */
 }
 
 .body__picture-house2 {
   position: absolute;
-  bottom: 297px;
+  bottom: 295px;
   left: 0;
   z-index: -3;
 }

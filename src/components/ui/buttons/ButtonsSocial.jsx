@@ -6,7 +6,7 @@ import { iconsFooter, iconsHeader } from './ButtonsSocialData';
 export const ButtonsSocial = ({place}) => {
   const renderOption = () => place === 'footer' ? iconsFooter : iconsHeader;
   return (
-    <>
+    <div className='social__wrapper'>
       {
         renderOption().map(icon => 
         <div className={`${icon.classNameOption}__social-item`}  key={icon.id}>
@@ -16,6 +16,6 @@ export const ButtonsSocial = ({place}) => {
         </div>
         )
       }
-    </>
+    </div>
   )
 }
