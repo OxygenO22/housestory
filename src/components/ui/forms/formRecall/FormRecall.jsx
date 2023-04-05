@@ -16,7 +16,7 @@ export const FormRecall = () => {
   return (
     <>
       { formRecallData.map(data => 
-        <div className='formrecall__wrapper'>
+        <div className='formrecall__wrapper' key={data.id}>
           <div className='formrecall__form-wrapper'>
             <div className='formrecall__form-text'>
               <h2 className='formrecall__form-text-title'>

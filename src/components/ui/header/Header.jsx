@@ -5,6 +5,8 @@ import logo1 from '../../../icons/logo1.svg';
 import box from '../../../icons/box.svg';
 import telephone from '../../../icons/phone1.svg';
 import ellipse2 from '../../../icons/Ellipse2.svg';
+import menu from '../../../icons/menu.svg';
+import close from '../../../icons/close.svg';
 import { Button } from '../buttons/Button';
 import { ButtonsSocial } from '../buttons/ButtonsSocial';
 import { headerData } from './HeaderData';
@@ -14,15 +16,15 @@ export const Header = () => {
     <>
     { 
       headerData.map(data => 
-        <div className='header__wrapper'>
+        <div className='header__wrapper' key={data.id}>
           <div className="header__item header__item-logo">
             <Link to='/'>
               <div className="header__logo">
-                <img className='header__img' src={logo1} alt="logo 1"></img>
+                <img className='header__logo-img' src={logo1} alt="logo 1"></img>
               </div>
             </Link>
           </div>
-          <div className="header__item">
+          <div className="header__item header__item-worktime">
             <div className="header__item-inner">
               <p className='header__text-work' title={data.workTime}>
                 {data.workTime}
@@ -32,7 +34,7 @@ export const Header = () => {
               </p>
             </div>
           </div>
-          <div className="header__item">
+          <div className="header__item header__item-layout">
             <Link className='header__box-link'  to='*'>
               <div className="header__item-inner-layout">
                 <div className="header__box-icon">
@@ -49,8 +51,8 @@ export const Header = () => {
           <div className="header__item header__item-social">
             <div className='header__social'>
               <div className='header__social-icon'>
-                <img className='header__social-img-phone' src={telephone} alt="telephone"></img>
-                <img className='header__social-img-ellipse2' src={ellipse2} alt="ellipse2"></img>
+                <img className='header__social-img-phone' src={telephone} alt="telephone"/>
+                <img className='header__social-img-ellipse2' src={ellipse2} alt="ellipse2"/>
               </div>
               <div className='header__social-contacts'>
                 <a className='header__social-phonenumber' href="tel:+7(915)168-55-50" title={data.phone}>{data.phone}</a>
@@ -58,8 +60,13 @@ export const Header = () => {
               </div>
             </div>
           </div>
-          <div className="header__item header__item-button">
-            <Button classname={"button__header"} name={"Заказать звонок"}/>
+          <div className='header__item header__item-button'>
+            <Button classname={'button__header'} name={'Заказать звонок'}/>
+          </div>
+          <div className='header__item header__item-burgermenu'>
+            <div className='header__burgermenu-picture'>
+              <img className='header__burgermenu-img' src={close} alt='close' />
+            </div>
           </div>
         </div>
       )

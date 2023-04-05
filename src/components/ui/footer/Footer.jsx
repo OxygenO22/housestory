@@ -41,7 +41,7 @@ export const Footer = () => {
       <div className="footer__item">
         {
           extraInfo.map(data => 
-            <div className="footer__inner-logo3">
+            <div className="footer__inner-logo3" key={data.id}>
               <p className="footer__logo3-text1">{data.social}</p>
               <div className='footer__social'>
                 <ButtonsSocial place={'footer'}/>

@@ -19,7 +19,7 @@ export const FormConsultation = () => {
   return (
     <>
       { formConsultationData.map(data => 
-        <div className='formconsult__wrapper'>
+        <div className='formconsult__wrapper' key={data.id}>
           <div className='formconsult__text'>
             <h1 className='formconsult__text-title'>
              {data.mainTitle}
