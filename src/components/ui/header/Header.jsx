@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.scss';
 import { Link } from 'react-router-dom';
 import logo1 from '../../../icons/logo1.svg';
 import box from '../../../icons/box.svg';
 import telephone from '../../../icons/phone1.svg';
 import ellipse2 from '../../../icons/Ellipse2.svg';
-import menu from '../../../icons/menu.svg';
+import menu from '../../../icons/burger_menu.svg';
 import close from '../../../icons/close.svg';
 import { Button } from '../buttons/Button';
 import { ButtonsSocial } from '../buttons/ButtonsSocial';
 import { headerData } from './HeaderData';
+import { BurgerMenu } from '../../burgerMenu/BurgerMenu';
 
 export const Header = () => {
+  const [isShow, setIsShow] = useState(false);
   return (
     <>
     { 
@@ -63,11 +65,20 @@ export const Header = () => {
           <div className='header__item header__item-button'>
             <Button classname={'button__header'} name={'Заказать звонок'}/>
           </div>
-          <div className='header__item header__item-burgermenu'>
+          <div 
+            className='header__item header__item-burgermenu'
+            onClick={() => setIsShow(!isShow)}
+          >
             <div className='header__burgermenu-picture'>
-              <img className='header__burgermenu-img' src={close} alt='close' />
+
+              { !isShow ? 
+                <img className='header__burgermenu-img' src={menu} alt='menu' />
+                :
+                <img className='header__burgermenu-img header__burgermenu-img-close' src={close} alt='close' />
+              }
             </div>
           </div>
+          {isShow && <BurgerMenu />}
         </div>
       )
     }
